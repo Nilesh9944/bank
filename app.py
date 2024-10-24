@@ -100,41 +100,89 @@ st.markdown("""
     body {
         background-color: #FFEB3B;
     }
-    .main-title {
-        color: #4CAF50;
+ .main-title {
+        color: #2D3748;
         text-align: center;
-        font-size: 42px;
-        font-family: Arial, sans-serif;
-        margin-bottom: 30px;
+        font-size: 46px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     }
     .prediction-title {
-        color: #FF5733;
+        color: #F56565;
         font-size: 28px;
         text-align: center;
         font-weight: bold;
         margin-top: 30px;
     }
     .info-text {
-        color: #555;
-        font-size: 18px;
+        color: #718096;
+        font-size: 20px;
         text-align: center;
-        margin-top: 10px;
-    }
-    .custom-input {
         margin-bottom: 20px;
+        font-family: 'Georgia', serif;
+    }
+    .input-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+    .input-title {
+        font-size: 18px;
+        color: #4A5568;
+        font-weight: bold;
+    }
+    .stNumberInput>div>input {
+        background-color: #EDF2F7;
+        border: 1px solid #CBD5E0;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 16px;
+        color: #2D3748;
+        margin-bottom: 15px;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: #38B2AC;
         color: white;
         font-size: 18px;
-        padding: 10px 20px;
-        border-radius: 8px;
+        padding: 12px 25px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #45a049;
+        background-color: #319795;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
-     </style>
-    """, unsafe_allow_html=True)
+    .success-message {
+        color: #48BB78;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .error-message {
+        color: #E53E3E;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #A0AEC0;
+        margin-top: 40px;
+        font-family: 'Courier New', monospace;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Set up the Streamlit app with enhanced visuals
 st.markdown('<h1 class="main-title">Bankruptcy Prediction Model</h1>', unsafe_allow_html=True)
