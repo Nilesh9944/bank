@@ -98,7 +98,7 @@ model = pickle.load(load)
 st.markdown("""
     <style>
     body {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        background-color: #FFEB3B;
     }
     .main-title {
         color: #4CAF50;
