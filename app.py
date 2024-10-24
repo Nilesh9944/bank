@@ -97,10 +97,11 @@ model = pickle.load(load)
 # Inject custom CSS to style the app
 st.markdown("""
     <style>
-    body {
-        background-color: #FFEB3B;
+    /* Change background color for the main content area */
+    .stApp {
+        background-color: #FFEB3B;  /* Yellow background */
     }
- .main-title {
+    .main-title {
         color: #2D3748;
         text-align: center;
         font-size: 46px;
